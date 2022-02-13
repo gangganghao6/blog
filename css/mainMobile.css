@@ -91,6 +91,10 @@
         line-height: 1.5rem;
     }
 
+    .totalPages {
+        line-height: 3rem;
+    }
+
     .menuList {
         flex-direction: column;
         height: 40%;

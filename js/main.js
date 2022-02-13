@@ -5,7 +5,6 @@ init();
 
 let playMusic = document.querySelector('.playMusic');
 let music = document.querySelector('.music');
-let backgroundVideo = document.querySelector('.backgroundVideo')
 let isPlaying = false;
 music.addEventListener("playing", function () {
     isPlaying = true;
@@ -23,9 +22,6 @@ playMusic.addEventListener('click', function () {
         music.play();
     }
     isPlaying = !isPlaying;
-})
-backgroundVideo.addEventListener('pause', function (e) {
-    backgroundVideo.play();
 })
 getBlogs().then()
 
