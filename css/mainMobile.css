@@ -1,0 +1,102 @@
+@media screen and (max-width: 680px) {
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #root {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .contact {
+        width: 35%;
+    }
+
+    .contactLink {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .menu {
+        width: 20%;
+    }
+
+    .search {
+        width: 35%;
+    }
+
+    .searchBox {
+        width: 60%;
+        height: 45%;
+    }
+
+    .searchButton {
+        width: 35%;
+        height: 48%;
+    }
+
+    .blogList {
+        height: 125px;
+    }
+
+    .blogListImgContainer {
+        width: 30%;
+    }
+
+    .blogListContentContainer {
+        margin: 5px;
+        height: 100%;
+    }
+
+    .blogListTitle {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        /*margin-bottom: 5px;*/
+    }
+
+    .blogListContent {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .blogListTime {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+    }
+
+    .pageSelect {
+        height: 3rem;
+    }
+
+    .page {
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .pageItem {
+        font-size: 0.75rem;
+        width: 3.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .menuList {
+        flex-direction: column;
+        height: 40%;
+    }
+
+    .menuListItem {
+        width: 100vw;
+    }
+}

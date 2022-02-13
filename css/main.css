@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+html {
+    font-size: 16px;
+    background-color: rgb(240, 244, 247);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    width: 100%;
+    /*height: 100%;*/
+    height: auto;
+    min-height: 88vh;
+    /*background-color: pink;*/
+}
+
+.header {
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    color: black;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s;
+}
+
+.header:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.contactLink {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contactIcon {
+    height: 50%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.menu:hover .menuList {
+    display: flex;
+    transition: all 0.3s;
+}
+
+.menu:hover .menuListItem {
+    background-color: black;
+}
+.header:hover .searchBox{
+    background-color: white;
+    color: black;
+}
+.header:hover .searchButton{
+    background-color: rgb(52, 141, 254);
+    border: none;
+}
+.menuList {
+    width: 90%;
+    height: 200px;
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    top: 8%;
+    left: 5%;
+    transition: all 0.3s;
+    z-index: 50;
+}
+
+
+.menuListItem {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 16.6%;
+    transition: all 0.3s;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.menuListItem:hover {
+    opacity: 0.8 !important;
+}
+
+.search {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox {
+    width: 50%;
+    height: 47%;
+    border: 1px solid rgb(217, 217, 217);
+    padding-left: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+.searchBox:focus {
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.searchButton {
+    width: 20%;
+    max-width: 80px;
+    height: 50%;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid white;
+    border-left: none;
+}
+
+.searchButton:hover {
+    background-color: rgb(52, 141, 254);
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.videoContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogListContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blogList {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.blogListImgContainer {
+    display: block;
+    width: 25%;
+    height: 80%;
+    margin: 10px;
+}
+
+.blogListImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogListContentContainer {
+    margin: 20px;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogListContentContainer:hover {
+    opacity: 0.6;
+}
+
+.blogListTitle {
+    font-size: 1.75rem;
+    max-height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.blogListContent {
+    width: 100%;
+    font-size: 1.25rem;
+    overflow: hidden;
+    max-height: 4.5rem;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.blogListTime {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.pageSelect {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: auto;
+    height: 4rem;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+
+.pageItem {
+    color: black;
+    display: block;
+    width: 6rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 2px solid rgb(217, 217, 217);
+    text-align: center;
+    cursor: pointer;
+}
+
+.pageItem:hover {
+    border: 2px solid dodgerblue;
+}
+
+.pages .pageItem:nth-child(1) {
+    margin-right: 0.5rem;
+}
+
+.pages .pageItem:nth-child(2) {
+    margin-right: 0.5rem;
+}
+
+.totalPages {
+    margin-left: 5px;
+    line-height: 4rem;
+}
+
+.footer {
+    width: 100%;
+    height: 12%;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContact {
+    margin-top: 0.2rem;
+    height: 3rem;
+    width: auto;
+    display: flex;
+}
+
+.last {
+    width: auto;
+    height: 1.5rem;
+    color: rgba(255, 255, 255, 0.44);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.last a {
+    color: white;
+}
+
+.musicContainer {
+    position: fixed;
+    z-index: -1;
+}
+
+.playMusic {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20%;
+    left: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}

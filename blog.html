@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" type="image/svg+xml" href="./blog.svg"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mainMobile.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/blogMobile.css">
+<!--    <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">-->
+    <link href="./css/highlight.css" rel="stylesheet">
+</head>
+<body>
+<div id="root">
+    <div class="header">
+        <div class="contact">
+            <a class="contactLink" href="https://github.com/gangganghao6" target="_blank">
+                <img class="contactIcon" src="images/github.png" alt="github">
+            </a>
+            <a class="contactLink" href="mailto:530394623@qq.com">
+                <img class="contactIcon" src="images/email.png" alt="github">
+            </a>
+            <a class="contactLink qq" href="tencent://message/?uin=530394623">
+                <img class="contactIcon" src="images/qq.png" alt="github">
+            </a>
+        </div>
+        <div class="menu">
+            Menu
+            <div class="menuList">
+                <a class="menuListItem" href="./index.html"><span>首页</span></a>
+                <a class="menuListItem" href="https://github.com/gangganghao6" target="_blank"><span>我的Github</span></a>
+                <a class="menuListItem" href="mailto:530394623@qq.com"><span>我的邮箱</span></a>
+                <a class="menuListItem  qq" href="tencent://message/?uin=530394623"><span>我的QQ</span></a>
+                <a class="menuListItem" href="./blog.html?id=2"><span>Blog建设日志</span></a>
+                <a class="menuListItem" href="./blog.html?id=1"><span>关于我</span></a>
+            </div>
+        </div>
+        <div class="search">
+            <input class="searchBox" type="text">
+            <button class="searchButton" type="button">搜索</button>
+        </div>
+    </div>
+    <div class="blogContent">
+        <a class="blogImgContainer" href="./images/1644650855246.jpg">
+        </a>
+        <div class="blogContentContainer">
+            <div class="blogTitle">loading</div>
+            <div class="blogTime">loading</div>
+            <div class="blogContents">loading</div>
+            <div id="content"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerContact">
+            <a class="contactLink" href="https://github.com/gangganghao6" target="_blank">
+                <img class="contactIcon" src="images/github.png" alt="github">
+            </a>
+            <a class="contactLink" href="mailto:530394623@qq.com">
+                <img class="contactIcon" src="images/email.png" alt="github">
+            </a>
+            <a class="contactLink  qq" href="tencent://message/?uin=530394623">
+                <img class="contactIcon" src="images/qq.png" alt="github">
+            </a>
+        </div>
+        <div class="last">
+            @2022
+            <a href="./index.html">Pikachu的个人博客</a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/marked/4.0.2/marked.js"></script>
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/dayjs"></script>
+    <script type='module' src="js/blog.js"></script>
+</div>
+</body>
+</html>
